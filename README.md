@@ -6,7 +6,7 @@ A Computer-Vision web application for classifying dental images into various med
 
 ## 📸 App Preview
 
-![App Screenshot](/static/screenshot.png)
+![App Screenshot](https://github.com/Mohamedh0/Teeth-Classification/blob/main/static/Screenshot%20(148).png)
 ---
 
 ## Features
