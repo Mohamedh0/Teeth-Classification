@@ -2,11 +2,11 @@ import requests
 import os
 from collections import Counter
 
-# API base URL (change to deployed URL if testing on Render)
+# API base URL 
 BASE_URL = "http://localhost:8000"
 
-# Directory with test images (update with actual path)
-TEST_IMAGE_DIR = "/path/to/teeth-disease/Teeth_DataSet/Teeth_Dataset/Testing"  # Replace with actual path
+# Directory with test images 
+TEST_IMAGE_DIR = ""
 CLASSES = ['CaS', 'CoS', 'Gum', 'MC', 'OC', 'OLP', 'OT']
 
 def test_health_endpoint():
