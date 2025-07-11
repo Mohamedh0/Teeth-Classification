@@ -1,0 +1,6 @@
+fastapi==0.115.13
+uvicorn[standard]==0.34.3
+tensorflow==2.19.0
+requests==2.32.4
+pillow==11.3.0
+Python-IO==0.3
