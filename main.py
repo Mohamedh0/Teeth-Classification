@@ -34,15 +34,11 @@ try:
 except Exception as e:
     raise Exception(f"Failed to load Keras model: {str(e)}")
 
-# Initialize ImageDataGenerator for preprocessing
-datagen = ImageDataGenerator()
-
 def preprocess_image(image: Image.Image):
-    """Preprocess the input image to match the Streamlit app."""
+    """Preprocess the input image."""
     image = image.resize(IMG_SIZE)
     image = img_to_array(image)
     image = np.expand_dims(image, axis=0)
-    image = datagen.flow(image, batch_size=1).__next__()
     return image
 
 @app.get("/", response_class=HTMLResponse)
